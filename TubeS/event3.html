@@ -181,16 +181,16 @@
       </ol>
 
       <div class="container-fluid">
-				<h1 class="bd-title">알림</h1>
+				<h1 class="bd-title">공지</h1>
         <div class="animated fadeIn">
           <div class="row">
             <div class="col-12">
               <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#t1" role="tab" >사용자 알림</a>
+                  <a class="nav-link active" data-toggle="tab" href="#t1" role="tab" >공지사항</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#t2" role="tab" >광고주 알림</a>
+                  <a class="nav-link" data-toggle="tab" href="#t2" role="tab" >불만사항</a>
                 </li>
               </ul>
 
@@ -198,100 +198,57 @@
                 <div class="tab-pane active" id="t1" role="tabpanel">
 									<div class="row">
 										<div class="col">
-											<table class="table table-sm table-bordered text-center">
+											<table class="table table-sm table-bordered text-center user-2">
 												<thead>
 													<tr>
+														<th class="ck">
+															<input class="" type="checkbox" value="">
+														</th>
 														<th>#</th>
-														<th>											
-															<select class="custom-select">
-																<option selected>SMS</option>
-																<option value="1">Email</option>
-															</select>
-														</th>
-														<th>
-															<select class="custom-select">
-																<option selected>무료</option>
-																<option value="1">유료</option>
-																<option value="1">전체</option>
-															</select>
-														</th>
-														<th>
-															<select class="custom-select">
-																<option selected>대한민국</option>
-																<option value="1">일본</option>
-																<option value="1">베트남</option>
-															</select>
-														</th>
-														<th>
-															<select class="custom-select">
-																<option selected>iOS</option>
-																<option value="1">Android</option>
-																<option value="1">전체</option>
-															</select>
-														</th>
-														<th>미리보기</th>
-														<th>발송건수</th>
-														<th>발송일자</th>
+														<th>제목</th>
+														<th>발송대상</th>
+														<th>작성자</th>
+														<th>작성일</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
+														<td><input class="" type="checkbox" value=""></td>
 														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!" data-toggle="modal" data-target="#preview-noty"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
+														<td>
+															<a href="#!" data-toggle="modal" data-target="#noti-detail">연말 서버 이전 공지</a>									
+														</td>
+														<td>발송대상</td>
+														<td>홍길동</td>
+														<td>2017-10-01</td>
 													</tr>
 													<tr>
+														<td><input class="" type="checkbox" value=""></td>
 														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
+														<td>
+															<a href="#!" data-toggle="modal" data-target="#review-detail">연말 서버 이전 공지</a>									
+														</td>
+														<td>발송대상</td>
+														<td>홍길동</td>
+														<td>2017-10-01</td>
 													</tr>
 													<tr>
+														<td><input class="" type="checkbox" value=""></td>
 														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
+														<td>
+															<a href="#!" data-toggle="modal" data-target="#review-detail">연말 서버 이전 공지</a>									
+														</td>
+														<td>발송대상</td>
+														<td>홍길동</td>
+														<td>2017-10-01</td>
 													</tr>
 												</tbody>
 											</table>
 										</div>
 									</div>
 									<div class="text-right">
-										<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#noty-email">Email 발송</a>
-										<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#noty-sms">SMS 발송</a>
+										<a href="#!" class="btn btn-danger" data-toggle="modal" data-target="#noty-email">선택삭제</a>
+										<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#noty-sms">등록</a>
 									</div>
 									<nav>
 										<ul class="pagination justify-content-center">
@@ -314,123 +271,6 @@
 									</nav>
                 </div>
                 <div class="tab-pane" id="t2" role="tabpanel">
-									<div class="row">
-										<div class="col">
-											<table class="table table-sm table-bordered text-center">
-												<thead>
-													<tr>
-														<th>#</th>
-														<th>											
-															<select class="custom-select">
-																<option selected>SMS</option>
-																<option value="1">Email</option>
-															</select>
-														</th>
-														<th>
-															<select class="custom-select">
-																<option selected>광고주</option>
-																<option value="1">일반</option>
-																<option value="1">프리미엄</option>
-															</select>
-														</th>
-														<th>
-															<select class="custom-select">
-																<option selected>대한민국</option>
-																<option value="1">일본</option>
-																<option value="1">베트남</option>
-															</select>
-														</th>
-														<th>
-															<select class="custom-select">
-																<option selected>iOS</option>
-																<option value="1">Android</option>
-																<option value="1">전체</option>
-															</select>
-														</th>
-														<th>미리보기</th>
-														<th>발송건수</th>
-														<th>발송일자</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!" data-toggle="modal" data-target="#preview-noty"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-													<tr>
-														<th scope="row">1</th>
-														<td>SMS</td>
-														<td>무료</td>
-														<td>미국</td>
-														<td>iOS</td>
-														<td><a href="#!"><i class="fa fa-search"></i></a></td>
-														<td>3000000 건</td>
-														<td>2017-02-22</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-									<div class="text-right">
-										<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#noty-email">Email 발송</a>
-										<a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#noty-sms">SMS 발송</a>
-									</div>
-									<nav>
-										<ul class="pagination justify-content-center">
-											<li class="page-item">
-												<a class="page-link" href="#" aria-label="Previous">
-													<span aria-hidden="true">«</span>
-													<span class="sr-only">Previous</span>
-												</a>
-											</li>
-											<li class="page-item"><a class="page-link" href="#">1</a></li>
-											<li class="page-item"><a class="page-link" href="#">2</a></li>
-											<li class="page-item"><a class="page-link" href="#">3</a></li>
-											<li class="page-item">
-												<a class="page-link" href="#" aria-label="Next">
-													<span aria-hidden="true">»</span>
-													<span class="sr-only">Next</span>
-												</a>
-											</li>
-										</ul>
-									</nav>
-
                 </div>
               </div>
             </div>
@@ -443,11 +283,56 @@
     </main>
   </div>
 
-	<div class="modal fade" id="notice-noty" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-sm" role="document">
+	<div class="modal fade" id="noti-detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">SMS | Email</h4>
+					<table class="table table-sm table-bordered text-center user-2">
+												<thead>
+													<tr>
+														<th class="ck">
+															<input class="" type="checkbox" value="">
+														</th>
+														<th>#</th>
+														<th>제목</th>
+														<th>발송대상</th>
+														<th>작성자</th>
+														<th>작성일</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><input class="" type="checkbox" value=""></td>
+														<th scope="row">1</th>
+														<td>
+															<a href="#!" data-toggle="modal" data-target="#noti-detail">연말 서버 이전 공지</a>									
+														</td>
+														<td>발송대상</td>
+														<td>홍길동</td>
+														<td>2017-10-01</td>
+													</tr>
+													<tr>
+														<td><input class="" type="checkbox" value=""></td>
+														<th scope="row">1</th>
+														<td>
+															<a href="#!" data-toggle="modal" data-target="#review-detail">연말 서버 이전 공지</a>									
+														</td>
+														<td>발송대상</td>
+														<td>홍길동</td>
+														<td>2017-10-01</td>
+													</tr>
+													<tr>
+														<td><input class="" type="checkbox" value=""></td>
+														<th scope="row">1</th>
+														<td>
+															<a href="#!" data-toggle="modal" data-target="#review-detail">연말 서버 이전 공지</a>									
+														</td>
+														<td>발송대상</td>
+														<td>홍길동</td>
+														<td>2017-10-01</td>
+													</tr>
+												</tbody>
+											</table>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">×</span>
 					</button>
